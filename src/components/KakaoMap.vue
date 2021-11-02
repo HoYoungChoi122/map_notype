@@ -113,33 +113,39 @@ export default {
       this.map.setCenter(iwPosition);
     },
     mark1(){
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+          mapOption = {
+            center: new kakao.maps.LatLng(37.564343, 126.947613), // 지도의 중심좌표
+            level: 3, // 지도의 확대 레벨
+          };
 
-      const positions = this.markerPositions1.map(
-          (position) => new kakao.maps.LatLng(...position)
-      );
+      const map = new kakao.maps.Map(mapContainer, mapOption);
 
-      this.markers = positions.map(
-          (position) =>
-              new kakao.maps.Marker({
-                map: this.map,
-                title :'<div style="padding:5px;">Hello World!</div>',
-                opacity:1,
-                position,
-              })
-      );
-      console.log(this.markers)
-      // var mLabel = new kakao.maps.InfoWindow({
-      //   position: mapCenter, // 지도의 중심좌표에 올립니다.
-      //   content: '스페이스 닷원' // 인포윈도우 내부에 들어갈 컨텐츠 입니다.
+      const positions = [
+        {
+          id: 1,
+          store: '학생문화관점',
+          location: '학생문화관 지하1층 로비',
+          time: '학기 중: 월~금 08:30~19:00 | 토 09:00~14:00',
+          vacation: '방학 중: 월~금 08:30~18:00 | 토 09:00~14:00',
+          tel: '02-3277-3707',
+          latlng: new kakao.maps.LatLng(37.562632898194835, 126.9454282268269),
+        }
+      ]
+      console.log(positions)
+      positions.forEach(function(pos) {
+        new kakao.maps.Marker({
+          map: map, // 마커를 표시할 지도
+          position: pos.latlng, // 마커의 위치
+        })
+      })
+
+      // const customOverlay = new kakao.maps.CustomOverlay({
+      //   position: pos.latlng,
+      //   xAnchor: 0.5,
+      //   yAnchor: 1.05,
       // });
 
-      const bounds = positions.reduce(
-          (bounds, latlng) => bounds.extend(latlng),
-          new kakao.maps.LatLngBounds()
-      );
-      // console.log(bounds);
-      this.map.setBounds(bounds);
-      // this.markers.setMap(this.map)
     }
   },
 };
