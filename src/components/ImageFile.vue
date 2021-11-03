@@ -34,7 +34,14 @@
                 <b-table-simple class=" info_table" borderless>
                   <b-tbody>
                     <b-tr>
-                      <b-td v-for="i in 12" :key="i">i</b-td>
+                      <b-th>이름</b-th>
+                      <b-td colspan="2">hy</b-td>
+                      <b-th>회사</b-th>
+                      <b-td colspan="2">ㅠㅠ</b-td>
+                      <b-th>부서</b-th>
+                      <b-td colspan="2">개발팀</b-td>
+                      <b-th>부서상세</b-th>
+                      <b-td colspan="2">없음</b-td>
                     </b-tr>
                     <b-tr>
                       <b-td v-for="i in 12" :key="i">i</b-td>
@@ -45,8 +52,9 @@
                     <b-tr>
                       <b-td v-for="i in 12" :key="i">i</b-td>
                     </b-tr>
-
-
+                    <b-tr>
+                      <b-td v-for="i in 12" :key="i">i</b-td>
+                    </b-tr>
                   </b-tbody>
                 </b-table-simple>
 
@@ -171,15 +179,16 @@ export default {
 
 <style scoped>
 .main_con{
-  background-color: #51534D;
+  background-color: #3B3B3B;
 }
 .thumbnail_img{
-  background-color: #A7A6A4 !important;
-  height: 300px;
-  width: 300px;
+  background-color: #FFFFFF !important;
+  height: 400px;
+  width: 400px;
 }
 .info_table{
-  color : #CAA915;
+  color : #FAF8FF;
   border:0;
+  letter-spacing: -1px;
 }
 </style>
