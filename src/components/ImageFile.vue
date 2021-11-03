@@ -22,51 +22,105 @@
 
       </b-table-simple>
     </div>
-    프로필?ㅊ
-
-    <b-container fluid class="p-4 bg-info container">
+    <b-container fluid class="p-4 container main_con">
       <b-row>
-        <div class="container mt-5 mb-5">
-          <div class="row no-gutters">
-            <div class="col-md-4 col-lg-4"><b-img thumbnail  :src="uploadImageFile" alt="프로필 사진"/></div>
-            <div class="col-md-8 col-lg-8">
-              <div class="d-flex flex-column">
-                <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
-                  <h3 class="display-5">최호영</h3>
-                  <span></span>
-                  <span></span>
-                  <span>회사 : 피앰아이</span>
-                  <span>소속 : 개발부</span>
-                  <!--              <span>소속 : 개발부</span>-->
-                  <!--              <span>소속 : 개발부</span>-->
-                </div>
-                <div class="p-3 bg-black text-white">
-                  <h6>Web designer &amp; Developer</h6>
-                </div>
-                <div class="d-flex flex-row text-white">
-                  <div class="p-4 bg-primary text-center skill-block">
-                    <h4>90%</h4>
-                    <h6>Bootstrap</h6>
-                  </div>
-                  <div class="p-3 bg-success text-center skill-block">
-                    <h4>70%</h4>
-                    <h6>Jquery</h6>
-                  </div>
-                  <div class="p-3 bg-warning text-center skill-block">
-                    <h4>80%</h4>
-                    <h6>HTML</h6>
-                  </div>
-                  <div class="p-3 bg-danger text-center skill-block">
-                    <h4>75%</h4>
-                    <h6>PHP</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <b-col>
+          <b-row>
+            <b-col cols="4">
+              <b-img thumbnail class="thumbnail_img"  src="https://placekitten.com/300/300" alt="프로필 사진"/>
+            </b-col>
+            <b-col cols="8">
+              <b-row class="p-1 h-100" >
+                <b-table-simple class=" info_table" borderless>
+                  <b-tbody>
+                    <b-tr>
+                      <b-td v-for="i in 12" :key="i">i</b-td>
+                    </b-tr>
+                    <b-tr>
+                      <b-td v-for="i in 12" :key="i">i</b-td>
+                    </b-tr>
+                    <b-tr>
+                      <b-td v-for="i in 12" :key="i">i</b-td>
+                    </b-tr>
+                    <b-tr>
+                      <b-td v-for="i in 12" :key="i">i</b-td>
+                    </b-tr>
+
+
+                  </b-tbody>
+                </b-table-simple>
+
+              </b-row>
+            </b-col>
+          </b-row>
+
+        </b-col>
       </b-row>
+
     </b-container>
+
+
+<!--    <b-container fluid class="p-4 bg-info container">-->
+<!--      <b-row>-->
+<!--        <div class="container mt-5 mb-5">-->
+<!--          <div class="col no-gutters">-->
+<!--            <div class="col-md-4 col-lg-4"><b-img thumbnail  :src="uploadImageFile" alt="프로필 사진"/></div>-->
+<!--            <div class="col-md-8 col-lg-8">-->
+<!--              <div class="d-flex flex-column">-->
+<!--                <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">-->
+<!--                  <h3 class="display-5">최호영</h3>-->
+<!--                  <span></span>-->
+<!--                  <span></span>-->
+<!--                  <span>회사 : 피앰아이</span>-->
+<!--                  <span>소속 : 개발부</span>-->
+<!--                  &lt;!&ndash;              <span>소속 : 개발부</span>&ndash;&gt;-->
+<!--                  &lt;!&ndash;              <span>소속 : 개발부</span>&ndash;&gt;-->
+<!--                </div>-->
+<!--                <div class="p-3 bg-black text-white text-left">-->
+<!--                  <h4>Web designer &amp; Developer</h4>-->
+<!--                </div>-->
+<!--                <div class="d-flex flex-row text-white">-->
+<!--                  <div class="p-4 bg-primary text-center skill-block">-->
+<!--                    <h6>출근시간</h6>-->
+<!--                    <h6>09:00 ~ 18:30 / 매일</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-success text-center skill-block">-->
+<!--                    <h4>70%</h4>-->
+<!--                    <h6>Jquery</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-warning text-center skill-block">-->
+<!--                    <h4>80%</h4>-->
+<!--                    <h6>HTML</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-danger text-center skill-block">-->
+<!--                    <h4>75%</h4>-->
+<!--                    <h6>PHP</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="d-flex flex-row text-white">-->
+<!--                  <div class="p-4 bg-primary text-center skill-block">-->
+<!--                    <h6>출근시간</h6>-->
+<!--                    <h6>09:00 ~ 18:30 / 매일</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-success text-center skill-block">-->
+<!--                    <h4>70%</h4>-->
+<!--                    <h6>Jquery</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-warning text-center skill-block">-->
+<!--                    <h4>80%</h4>-->
+<!--                    <h6>HTML</h6>-->
+<!--                  </div>-->
+<!--                  <div class="p-3 bg-danger text-center skill-block">-->
+<!--                    <h4>75%</h4>-->
+<!--                    <h6>PHP</h6>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </b-row>-->
+<!--    </b-container>-->
 
 
 
@@ -116,32 +170,16 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 100%;
-  height: 100%
+.main_con{
+  background-color: #51534D;
 }
-
-.bg-black {
-  background: #000
+.thumbnail_img{
+  background-color: #A7A6A4 !important;
+  height: 300px;
+  width: 300px;
 }
-
-.skill-block {
-  width: 30%
-}
-
-@media (min-width: 991px) and (max-width:1200px) {
-  .skill-block {
-    padding: 32px !important
-  }
-}
-
-@media (min-width: 1200px) {
-  .skill-block {
-    padding: 56px !important
-  }
-}
-
-body {
-  background-color: #eeeeee
+.info_table{
+  color : #CAA915;
+  border:0;
 }
 </style>
