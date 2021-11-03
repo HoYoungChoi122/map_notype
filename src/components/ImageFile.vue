@@ -32,14 +32,14 @@
             <b-col cols="8">
 
               <b-row class="info_table">
-                <b-col cols="3" class="p-2">
+                <b-col cols="6" class="p-2">
                   <label class="m-0 label_con w-100 p-1">
-                    <label class="tag_title">이름</label> <label class="tag_detail">최호영</label>
+                    <label class="tag_title">이름</label> <label class="tag_detail">ㅠㅠㅠ</label>
                   </label>
                 </b-col>
-                <b-col cols="3" class="p-2">
+                <b-col cols="6" class="p-2">
                   <label class="m-0 label_con w-100 p-1">
-                    <label class="tag_title">회사</label> <label class="tag_detail">피앰아이</label>
+                    <label class="tag_title">회사</label> <label class="tag_detail">ㅇㅇㅇ</label>
                   </label>
                 </b-col>
 
@@ -176,14 +176,14 @@ export default {
   width: 300px;
 }
 .info_table{
-  color : #FAF8FF;
+  color : #474554;
   border:0;
   letter-spacing: -1px;
 }
 .label_con{
   border-radius: 15px;
   border:3px solid #FAF8FF;
-  background-color: #628281;
+  background-color: #FFFFFF;
   /*color: #474554;*/
 }
 .tag_title{
@@ -193,7 +193,7 @@ export default {
   font-size: 24px;
 }
 .tag_detail{
-  width: 100px;
+  width: 250px;
   margin:0;
   font-size: 24px;
 }
