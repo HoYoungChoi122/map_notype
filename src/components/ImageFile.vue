@@ -30,34 +30,23 @@
               <b-img thumbnail class="thumbnail_img"  src="https://placekitten.com/300/300" alt="프로필 사진"/>
             </b-col>
             <b-col cols="8">
-              <b-row class="p-1 h-100" >
-                <b-table-simple class=" info_table" borderless>
-                  <b-tbody>
-                    <b-tr>
-                      <b-td colspan="3">
-                        <p class="m-0 text-left p-1" style="border: 1px solid; border-radius: 15px;">
-                          <span>이름:</span> <span>최호영</span>
-                        </p>
-                      </b-td>
-                      <b-td colspan="3">hy</b-td>
-                      <b-td colspan="3">hy</b-td>
-                      <b-td colspan="3">hy</b-td>
-                    </b-tr>
-                    <b-tr>
-                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
-                    </b-tr>
-                    <b-tr>
-                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
-                    </b-tr>
-                    <b-tr>
-                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
-                    </b-tr>
-                    <b-tr>
-                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
-                    </b-tr>
-                  </b-tbody>
-                </b-table-simple>
 
+              <b-row class="info_table">
+                <b-col cols="3" class="p-2">
+                  <label class="m-0 label_con w-100 p-1">
+                    <label class="tag_title">이름</label> <label class="tag_detail">최호영</label>
+                  </label>
+                </b-col>
+                <b-col cols="3" class="p-2">
+                  <label class="m-0 label_con w-100 p-1">
+                    <label class="tag_title">회사</label> <label class="tag_detail">피앰아이</label>
+                  </label>
+                </b-col>
+
+              </b-row>
+
+              <b-row class="info_table">
+                <b-col v-for="i in 12" :key="i">dd</b-col>
               </b-row>
             </b-col>
           </b-row>
@@ -190,5 +179,22 @@ export default {
   color : #FAF8FF;
   border:0;
   letter-spacing: -1px;
+}
+.label_con{
+  border-radius: 15px;
+  border:3px solid #FAF8FF;
+  background-color: #628281;
+  /*color: #474554;*/
+}
+.tag_title{
+  width: 50px;
+  margin:0;
+  font-weight: 1000;
+  font-size: 24px;
+}
+.tag_detail{
+  width: 100px;
+  margin:0;
+  font-size: 24px;
 }
 </style>
