@@ -22,7 +22,7 @@
 
       </b-table-simple>
     </div>
-    프로필?
+    프로필?ㅊ
 
     <b-container fluid class="p-4 bg-info container">
       <b-row>
