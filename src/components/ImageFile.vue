@@ -8,8 +8,8 @@
         drop-placeholder="Drop file here..."
     ></b-form-file>
     <b-button @click="viewFile">파일 확인</b-button>
-    <img class="popupImageItem"  alt="이미지업로드" style="width: 300px; height: 300px;">
-<!--    <b-img thumbnail fluid :src="uploadImageFile" alt="Image 1"></b-img>-->
+/*    <img class="popupImageItem"  alt="이미지업로드" style="width: 300px; height: 300px;">*/
+    <b-img thumbnail fluid :src="uploadImageFile" alt="Image 1" style="width: 300px; height: 300px;"></b-img>
     <br>
     <div class="container">
       <b-table-simple >
@@ -34,26 +34,26 @@
                 <b-table-simple class=" info_table" borderless>
                   <b-tbody>
                     <b-tr>
-                      <b-th>이름</b-th>
-                      <b-td colspan="2">hy</b-td>
-                      <b-th>회사</b-th>
-                      <b-td colspan="2">ㅠㅠ</b-td>
-                      <b-th>부서</b-th>
-                      <b-td colspan="2">개발팀</b-td>
-                      <b-th>부서상세</b-th>
-                      <b-td colspan="2">없음</b-td>
+                      <b-td colspan="3">
+                        <p class="m-0 text-left p-1" style="border: 1px solid; border-radius: 15px;">
+                          <span>이름:</span> <span>최호영</span>
+                        </p>
+                      </b-td>
+                      <b-td colspan="3">hy</b-td>
+                      <b-td colspan="3">hy</b-td>
+                      <b-td colspan="3">hy</b-td>
                     </b-tr>
                     <b-tr>
-                      <b-td v-for="i in 12" :key="i">i</b-td>
+                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
                     </b-tr>
                     <b-tr>
-                      <b-td v-for="i in 12" :key="i">i</b-td>
+                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
                     </b-tr>
                     <b-tr>
-                      <b-td v-for="i in 12" :key="i">i</b-td>
+                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
                     </b-tr>
                     <b-tr>
-                      <b-td v-for="i in 12" :key="i">i</b-td>
+                      <b-td v-for="i in 12" :key="i">{{i}}</b-td>
                     </b-tr>
                   </b-tbody>
                 </b-table-simple>
@@ -183,8 +183,8 @@ export default {
 }
 .thumbnail_img{
   background-color: #FFFFFF !important;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 .info_table{
   color : #FAF8FF;

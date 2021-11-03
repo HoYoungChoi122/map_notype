@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <b-button @click="mapToggle"></b-button>
     <div v-if="isMap">
       <img alt="Vue logo" src="../assets/logo.png">
       <KakaoMap msg="Welcome to Your Vue.js App"/>
@@ -25,5 +26,11 @@ export default {
   data: () => ({
     isMap : false
   }),
+  methods:{
+    mapToggle(){
+      this.isMap = !this.isMap;
+    }
+  }
+
 }
 </script>
