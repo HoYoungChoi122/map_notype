@@ -19,7 +19,6 @@
         <b-tbody>
           <b-td v-for="i in 12" :key="i">td</b-td>
         </b-tbody>
-
       </b-table-simple>
     </div>
     <b-container fluid class="p-4 container main_con">
