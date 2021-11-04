@@ -8,7 +8,7 @@
         drop-placeholder="Drop file here..."
     ></b-form-file>
     <b-button @click="viewFile">파일 확인</b-button>
-/*    <img class="popupImageItem"  alt="이미지업로드" style="width: 300px; height: 300px;">*/
+    <img class="popupImageItem"  alt="이미지업로드" style="width: 300px; height: 300px;">
     <b-img thumbnail fluid :src="uploadImageFile" alt="Image 1" style="width: 300px; height: 300px;"></b-img>
     <br>
     <div class="container">
@@ -65,24 +65,24 @@
         <div class="card content">
           <div class="card-content">
             <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Gamer">
+              <b-img thumbnail src="https://placekitten.com/300/300" alt="Gamer"/>
             </div>
-            <div class="card-label">E-Sports</div>
+<!--            <div class="card-label"></div>-->
             <div class="card-title">
-              Fnatic raises $19 million, shakes up leadership team
+              #테스트
             </div>
           </div>
         </div>
         <div class="card content">
           <div class="card-content">
             <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard">
+              <b-img  src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard"/>
             </div>
             <div class="card-label">
-              Technology
+              INFO
             </div>
             <div class="card-title">
-              Google Stadia: The Future of Gaming
+              뭔가 정보들
             </div>
           </div>
         </div>
@@ -92,15 +92,15 @@
               <img src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="Controller">
             </div>
             <div class="card-label">
-              Consoles
+              INFO
             </div>
             <div class="card-title">
-              PS5 won't launch before mid-2020
+             각종 정보들
             </div>
           </div>
         </div>
         <div class="card form">
-          <div class="form-title" ref="test">ㅅㄷㄴㅅ</div>
+          <div class="form-title" ref="test">최호영</div>
         </div>
       </div>
     </b-container>
@@ -149,8 +149,14 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
-
+@font-face {
+  font-family: 'BMYEONSUNG';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .main_con{
+
   background-color: #3B3B3B;
 }
 .thumbnail_img{
@@ -276,12 +282,13 @@ body * {
   padding: 0.5em;
 }
 .card-title {
+  font-family: "BMYEONSUNG",serif;
   position: absolute;
   left: 1em;
   bottom: 1em;
   color: #d6dbeb;
   z-index: 5;
-  font-size: 0.8em;
+  font-size: 18px;
 }
 .card.form {
   position: relative;
@@ -299,6 +306,7 @@ body * {
   background: #fff;
 }
 .card.form .form-title {
+
   position: absolute;
   top: 1rem;
   left: 1rem;
