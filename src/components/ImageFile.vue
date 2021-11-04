@@ -54,73 +54,56 @@
         </b-col>
       </b-row>
 
+
+
     </b-container>
-
-
-<!--    <b-container fluid class="p-4 bg-info container">-->
-<!--      <b-row>-->
-<!--        <div class="container mt-5 mb-5">-->
-<!--          <div class="col no-gutters">-->
-<!--            <div class="col-md-4 col-lg-4"><b-img thumbnail  :src="uploadImageFile" alt="프로필 사진"/></div>-->
-<!--            <div class="col-md-8 col-lg-8">-->
-<!--              <div class="d-flex flex-column">-->
-<!--                <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">-->
-<!--                  <h3 class="display-5">최호영</h3>-->
-<!--                  <span></span>-->
-<!--                  <span></span>-->
-<!--                  <span>회사 : 피앰아이</span>-->
-<!--                  <span>소속 : 개발부</span>-->
-<!--                  &lt;!&ndash;              <span>소속 : 개발부</span>&ndash;&gt;-->
-<!--                  &lt;!&ndash;              <span>소속 : 개발부</span>&ndash;&gt;-->
-<!--                </div>-->
-<!--                <div class="p-3 bg-black text-white text-left">-->
-<!--                  <h4>Web designer &amp; Developer</h4>-->
-<!--                </div>-->
-<!--                <div class="d-flex flex-row text-white">-->
-<!--                  <div class="p-4 bg-primary text-center skill-block">-->
-<!--                    <h6>출근시간</h6>-->
-<!--                    <h6>09:00 ~ 18:30 / 매일</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-success text-center skill-block">-->
-<!--                    <h4>70%</h4>-->
-<!--                    <h6>Jquery</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-warning text-center skill-block">-->
-<!--                    <h4>80%</h4>-->
-<!--                    <h6>HTML</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-danger text-center skill-block">-->
-<!--                    <h4>75%</h4>-->
-<!--                    <h6>PHP</h6>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="d-flex flex-row text-white">-->
-<!--                  <div class="p-4 bg-primary text-center skill-block">-->
-<!--                    <h6>출근시간</h6>-->
-<!--                    <h6>09:00 ~ 18:30 / 매일</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-success text-center skill-block">-->
-<!--                    <h4>70%</h4>-->
-<!--                    <h6>Jquery</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-warning text-center skill-block">-->
-<!--                    <h4>80%</h4>-->
-<!--                    <h6>HTML</h6>-->
-<!--                  </div>-->
-<!--                  <div class="p-3 bg-danger text-center skill-block">-->
-<!--                    <h4>75%</h4>-->
-<!--                    <h6>PHP</h6>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </b-row>-->
-<!--    </b-container>-->
-
-
-
+    <br>
+    <br>
+    <br>
+    <b-container>
+      <div class="cards">
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Gamer">
+            </div>
+            <div class="card-label">E-Sports</div>
+            <div class="card-title">
+              Fnatic raises $19 million, shakes up leadership team
+            </div>
+          </div>
+        </div>
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard">
+            </div>
+            <div class="card-label">
+              Technology
+            </div>
+            <div class="card-title">
+              Google Stadia: The Future of Gaming
+            </div>
+          </div>
+        </div>
+        <div class="card content">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="Controller">
+            </div>
+            <div class="card-label">
+              Consoles
+            </div>
+            <div class="card-title">
+              PS5 won't launch before mid-2020
+            </div>
+          </div>
+        </div>
+        <div class="card form">
+          <div class="form-title" ref="test">ㅅㄷㄴㅅ</div>
+        </div>
+      </div>
+    </b-container>
 
   </div>
 </template>
@@ -135,6 +118,7 @@ export default {
   }),
   methods : {
     viewFile(){
+      console.dir(this.$refs.test.style)
       const file = this.file1
       if(file){
         const reader = new FileReader();
@@ -152,21 +136,20 @@ export default {
 
   },
   mounted() {
-    // console.log(this.file1)
     if(this.file1){
-      console.dir(this.file1)
       const reader = new FileReader();
       reader.onload = (e) => {
         this.uploadImageFile = e.target.result;
       }
       reader.readAsDataURL(this.file1);
-
     }
   }
 }
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+
 .main_con{
   background-color: #3B3B3B;
 }
@@ -197,4 +180,157 @@ export default {
   margin:0;
   font-size: 24px;
 }
+
+
+html,
+body {
+  /*background: #252833;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html *,
+body * {
+  box-sizing: border-box;
+}
+
+.cards {
+  width: calc(100% - 2em);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas: "a a b c" "a a d d";
+  width: 80%;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+.card:before {
+  height: 0;
+  content: "";
+  display: block;
+  padding-bottom: 47.36%;
+}
+.card.content:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+.card:nth-child(1) {
+  grid-area: a;
+}
+.card:nth-child(2) {
+  grid-area: b;
+}
+.card:nth-child(3) {
+  grid-area: c;
+}
+.card:nth-child(4) {
+  grid-area: d;
+}
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.card-label {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  background: #089f8a;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: white;
+  padding: 0.5em;
+}
+.card-title {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  color: #d6dbeb;
+  z-index: 5;
+  font-size: 0.8em;
+}
+.card.form {
+  position: relative;
+}
+.card.form:before {
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+.card.form:after {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: calc(100% - 1em);
+  height: calc(100% - 1em);
+  content: "";
+  background: #fff;
+}
+.card.form .form-title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2vw;
+  font-weight: 900;
+  z-index: 5;
+  text-transform: uppercase;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.card.form .form-title:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.5;
+  filter: blur(10px);
+  transition: all 0.25s ease;
+  z-index: 2;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card:nth-child(2) .card-label {
+  background: #ef4e7b;
+}
+.card:nth-child(3) .card-label {
+  background: #1098ad;
+}
+
 </style>
