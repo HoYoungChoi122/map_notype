@@ -71,8 +71,19 @@
             </div>
           </div>
         </b-col>
-        <b-col cols="2">
-          MEMO
+        <b-col cols="6">
+          <b-card-text>
+          <form>
+            <fieldset style="border:1px solid" class="pl-3">
+              <legend style="width: 100px;"> MEMO</legend>
+                <b-card-text>
+                  안녕하세요 반갑습니다.
+
+                </b-card-text>
+                <br>
+              </fieldset>
+            </form>
+          </b-card-text>
         </b-col>
       </b-row>
     </b-container>
