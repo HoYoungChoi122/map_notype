@@ -2,9 +2,9 @@
   <div >
     <b-container id="cont" class="main_con text-white pl-5 pt-5 text-left">
       <b-row class="pl-2 pr-2">
-        <b-col cols="6">
+        <b-col cols="6" class="main_title">
           <!-- f5b895 f3d6ae 658dc6-->
-          <h1 style="color:#F9F871;">#사이퍼즈 트친소</h1>
+          <h1  style="color:#F9F871;">#사이퍼즈 트친소</h1>
 <!--          <b-img src="http://static.cyphers.co.kr/img/lnb/logo_new.png" alt="LOGO"/>-->
 <!--          <b-icon stacked icon="slash-circle" variant="primary" style="width: 80px; height: 80px;"></b-icon>-->
         </b-col>
@@ -14,8 +14,8 @@
       </b-row>
       <b-row class="h-25 w-50">
         <b-col class="pt-3">
-          <h1 style="color:#959366;letter-spacing: -6px;">P R O F I L E</h1>
-          <h2 class="mt-4" style="font-weight: 300">이룩 / 52급</h2>
+          <h1 class="profile_text" style="color:#959366;letter-spacing: -6px;">P R O F I L E</h1>
+          <h1 class="mt-4" style="font-weight: 300">이룩 / 52급</h1>
           <h2 class="mt-4" style="font-weight: 300">CLAN 버텨보아라</h2>
 <!--          <h6 class="mt-4" style="font-weight: 300">티어 클랜이름</h6>-->
         </b-col>
@@ -314,6 +314,9 @@ export default {
   background: #141516;
   min-width: 1024px;
   max-width: 1024px;
+}
+.profile_text{
+  font-size:40px;
 }
 h1{
   font-size: 48px;
