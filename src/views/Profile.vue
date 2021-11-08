@@ -52,7 +52,7 @@
             <p>
               <b-input-group>
                 <template #prepend>
-                  <b-icon-play style="width: 40px; height: 40px;"/>
+                  <b-icon-fullscreen style="width: 40px; height: 40px;"/>
                 </template>
                 <b-card-text style="font-size:24px;" class="pl-4">PLAY TYPE</b-card-text>
               </b-input-group>
@@ -105,7 +105,7 @@
             <p>
               <b-input-group>
                 <template #prepend>
-                  <b-icon-suit-heart variant="danger" style="width: 40px; height: 40px;"/>
+                  <b-icon-suit-heart style="width: 40px; height: 40px;"/>
                 </template>
                 <b-card-text style="font-size:24px;" class="pl-4">PLAY LIKE</b-card-text>
               </b-input-group>
@@ -160,9 +160,9 @@
             <p>
               <b-input-group>
                 <template #prepend>
-                  <b-icon-person-plus  style="width: 40px; height: 40px;"/>
+                  <b-icon-twitter style="width: 40px; height: 40px;"/>
                 </template>
-                <b-card-text style="font-size:24px;" class="pl-4">팔로우</b-card-text>
+                <b-card-text style="font-size:24px;" class="pl-4">FOLLOW</b-card-text>
               </b-input-group>
             </p>
             <div class="d-flex feature_box">
