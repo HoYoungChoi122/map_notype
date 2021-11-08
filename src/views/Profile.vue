@@ -217,6 +217,17 @@
               <legend style="width: 100px;" class="memo_title"> MEMO</legend>
                 <b-card-text class="memo_box">
                   안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
+                  안녕하세요 반갑습니다.
 
                 </b-card-text>
               </fieldset>
@@ -293,10 +304,12 @@ h2{
   font-family: "Vitro_core", serif;
 }
 .feature_box>.hashTag{
-  border:1px solid #fff;
-  border-radius: 20px;
-  margin-right: 5px;
+  /*border:1px solid #fff;*/
+  /*border-radius: 20px;*/
+  /*margin-right: 5px;*/
   font-weight: 500;
+  margin:0;
+  font-size:20px;
   letter-spacing: -1px;
   font-family: "Cafe24Oneprettynight",sans-serif;
 }
@@ -304,10 +317,8 @@ h2{
   font-family: "HSYuji-Regular",sans-serif;
 }
 .position_icon{
-  /*color: linear-gradient(to right,red,blue);*/
   background: linear-gradient(to right, #1865de, #d20e0c);
   border-radius: 17px;
-  /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: transparent;
 }
 /*타이틀*/
