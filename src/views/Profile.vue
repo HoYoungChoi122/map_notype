@@ -3,7 +3,8 @@
     <b-container id="cont" class="main_con text-white pl-5 pt-5 text-left">
       <b-row class="pl-2 pr-2">
         <b-col cols="6">
-          <h1>#사이퍼즈 트친소</h1>
+          <!-- f5b895 f3d6ae 658dc6-->
+          <h1 style="color:#F9F871;">#사이퍼즈 트친소</h1>
 <!--          <b-img src="http://static.cyphers.co.kr/img/lnb/logo_new.png" alt="LOGO"/>-->
 <!--          <b-icon stacked icon="slash-circle" variant="primary" style="width: 80px; height: 80px;"></b-icon>-->
         </b-col>
@@ -13,7 +14,7 @@
       </b-row>
       <b-row class="h-25 w-50">
         <b-col class="pt-3">
-          <h1 style="letter-spacing: -6px;">P R O F I L E</h1>
+          <h1 style="color:#959366;letter-spacing: -6px;">P R O F I L E</h1>
           <h2 class="mt-4" style="font-weight: 300">이룩 / 52급</h2>
           <h2 class="mt-4" style="font-weight: 300">CLAN 버텨보아라</h2>
 <!--          <h6 class="mt-4" style="font-weight: 300">티어 클랜이름</h6>-->
@@ -211,28 +212,61 @@
           </div>
         </b-col>
         <b-col cols="6">
-          <b-card-text>
-          <form>
-            <fieldset style="border:1px solid" class="pl-3 pb-3">
-              <legend style="width: 100px;" class="memo_title"> MEMO</legend>
-                <b-card-text class="memo_box">
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
-                  안녕하세요 반갑습니다.
+          <div>
+            <p>
+              <b-input-group>
+                <template #prepend>
+                  <b-icon-journal style="color:#F9F871; width: 40px; height: 40px;"/>
+                </template>
+                <b-card-text style="font-size:24px; " class="pl-4">MEMO</b-card-text>
+              </b-input-group>
+            </p>
+            <b-card-text class="pl-3 p-1 memo_box" style="border-left:3px dashed; word-break: break-all; ">
+              안녕하세요 반갑습니다.
+              해당 문항은 메모의 기능이며 글자수 제한을 체크해보려고 합니다.
+              다른 문제 사항이 있다면 언제든 편히 말씀주세요
+              감사합니다.
+              안녕하세요 반갑습니다.
+              해당 문항은 메모의 기능이며 글자수 제한을 체크해보려고 합니다.
+              다른 문제 사항이 있다면 언제든
+            </b-card-text>
+<!--            <div class="d-flex feature_box">-->
+<!--              <b-card-text class="p-1 hashTag">-->
+<!--                # 2인-->
+<!--              </b-card-text>-->
+<!--              <b-card-text class="p-1 hashTag">-->
+<!--                # 3인-->
+<!--              </b-card-text>-->
+<!--              <b-card-text class="p-1 hashTag">-->
+<!--                # 4인-->
+<!--              </b-card-text>-->
+<!--              <b-card-text class="p-1 hashTag">-->
+<!--                # 5인-->
+<!--              </b-card-text>-->
+<!--            </div>-->
+          </div>
+<!--          <b-card-text>-->
+<!--          <form>-->
+<!--            <fieldset style="border:1px solid" class="pl-3 pb-3">-->
+<!--              <legend style="width: 100px;" class="memo_title"> MEMO</legend>-->
+<!--                <b-card-text class="memo_box">-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
+<!--                  안녕하세요 반갑습니다.-->
 
-                </b-card-text>
-              </fieldset>
-            </form>
-          </b-card-text>
+<!--                </b-card-text>-->
+<!--              </fieldset>-->
+<!--            </form>-->
+<!--          </b-card-text>-->
         </b-col>
       </b-row>
     </b-container>
@@ -313,8 +347,15 @@ h2{
   letter-spacing: -1px;
   font-family: "Cafe24Oneprettynight",sans-serif;
 }
-.memo_title, .memo_box{
-  font-family: "HSYuji-Regular",sans-serif;
+.memo_title{
+  font-weight: 400;
+  font-size:40px;
+  font-family: "Cafe24Oneprettynight",sans-serif;
+}
+.memo_box{
+  font-weight: 400;
+  font-size:16px;
+  font-family: "MaruBuri-Regular",sans-serif;
 }
 .position_icon{
   background: linear-gradient(to right, #1865de, #d20e0c);
@@ -354,6 +395,13 @@ h2{
 @font-face {
   font-family: 'Cafe24Oneprettynight';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
